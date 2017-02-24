@@ -69,8 +69,7 @@ body {
 	color: #1d1d1d;
 	background: #e2e7ec;
 	padding-top: 80px;
-	padding-bottom: 90px;
-
+	padding-bottom: 80px;
 }
 
 main{
@@ -78,8 +77,6 @@ main{
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: flex-start;
-	/*align-items: center;*/
-	/*border: 1px solid black;*/
 	max-width: 1160px;
 	padding: 10px;
 }
@@ -87,7 +84,6 @@ main{
 .ba-first-row,
 .ba-second-row {
 	display: flex;
-	/*border: 1px solid yellow;*/
 	justify-content: flex-start;
 	align-items: center;
 	flex-wrap: wrap;
@@ -98,8 +94,6 @@ main{
 	flex-grow: 1;
 	flex-shrink: 0;
 	padding: 10px;
-	/*background-color: aquamarine;*/
-	/*border: 3px solid black;*/
 	max-width: 380px;
 	min-width: 380px;
 	height: 560px;
@@ -125,7 +119,7 @@ main{
 }
 
 .ba-column__info--big{
-	background: url("../blog-grid-assets/first-line-1.png")/*, linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.05) 12%,rgba(0,0,0,0.15) 29%,rgba(0,0,0,0.5) 79%,rgba(0,0,0,0.6) 100%), linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.05) 12%, rgba(0,0,0,0.15) 29%, rgba(0,0,0,0.5) 79%, rgba(0,0,0,0.6) 100%),*/ center no-repeat;
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.05) 12%,rgba(0,0,0,0.15) 29%,rgba(0,0,0,0.5) 79%,rgba(0,0,0,0.6) 100%),  linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.05) 12%,rgba(0,0,0,0.15) 29%,rgba(0,0,0,0.5) 79%,rgba(0,0,0,0.6) 100%), url("../blog-grid-assets/first-line-1.png") center no-repeat;
 }
 
 .ba-column__img-1-2{
@@ -160,6 +154,7 @@ main{
 	height: 289px;
 	position: relative;
 }
+
 .ba-column__description time{
 	font-size: 13px;
 	color: #818181;
@@ -172,6 +167,30 @@ main{
 	margin: 0;
 	padding-top: 13px;
 	padding-bottom: 62px;
+	width: 310px;
+
+}
+
+.ba-column__description--big{
+	display: flex;
+
+	flex-flow: column;
+	flex: 1;
+	min-width: 360px;
+	justify-content: flex-end;
+	padding-left: 40px;
+
+}
+
+.ba-column__description--big h1{
+	color: #ffffff;
+	padding-bottom: 40px;
+	width: 320px;
+	font-weight: 900;
+}
+
+.ba-column__description--big time{
+	color: #ffffff;
 }
 
 .ba-column__time--hidden{
@@ -184,23 +203,22 @@ main{
 
 
 .ba-loading{
-	width: 200px;
-	margin: 65px auto 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 75px;
 
 }
 
 .ba-loading img{
-	display: inline-block;
-	width: auto;
-	vertical-align: middle;
-	margin-right: 10px;
-
+	width: 30px;
+	height: 30px;
+	padding-right: 10px;
 }
+
 .ba-loading h3{
-	display: inline-block;
 	color: #99a5b0;
 	font-size: 13px;
 	margin: 0;
 	line-height: 30px;
-
 }
